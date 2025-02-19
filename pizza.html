@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Home</title>
+  <link rel="stylesheet" href="pizza02.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Pizza <span>Home</span></div>
+    <nav>
+      <ul>
+        <li><a href="#pizza.html">Home</a></li>
+        <li><a href="#menu.html">La carte</a></li>
+        <li><a href="#apropos.html">A propos</a></li>
+        <li><a href="#contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="Voir la carte">
+    <h2>Voir la carte</h2>
+    <a href="#menu.html">Voir la carte</a>
+  </section>
+
+  <section class="hero">
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="pizza4.jpg" alt="Pizza 4" class="carousel-image">
+        <img src="pizza5.jpg" alt="Pizza 5" class="carousel-image">
+        <img src="pizza6.jpg" alt="Pizza 6" class="carousel-image">
+        <img src="pizza7.jpg" alt="Pizza 7" class="carousel-image">
+        <img src="pizza8.jpg" alt="Pizza 8" class="carousel-image">
+        <img src="pizza9.jpg" alt="Pizza 9" class="carousel-image">
+        <img src="pizza10.jpg" alt="Pizza 10" class="carousel-image">
+
+      </div>
+    </div>
+
+    <div class="content">
+      <h1><span>Take</span> it Cheesy!</h1>
+      <p>Savourez des pizzas artisanales préparées avec des ingrédients frais et de qualité. Commandez en ligne ou venez déguster sur place. Une explosion de saveurs à chaque bouchée !</p>
+      <div class="buttons">
+        <a href="#menu.html" class="btn btn-primary">Voir la carte</a>
+        <a href="#commande.html" class="btn btn-secondary">Passer une commande</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let slideIndex = 0;
+
+    function showSlides() {
+      let slides = document.querySelectorAll(".carousel-image");
+      if (slideIndex >= slides.length) { slideIndex = 0; }
+      if (slideIndex < 0) { slideIndex = slides.length - 1; }
+      
+      document.querySelector(".carousel-images").style.transform = `translateX(${-slideIndex * 100}%)`;
+    }
+
+    setInterval(() => {
+      slideIndex++;
+      showSlides();
+    }, 4000);
+
+    showSlides();
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Pizza Home. All rights reserved.</p>
+  </footer>
+</body>
+</html>

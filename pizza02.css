@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    background-color: #1a2b4c;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f1a7c4;
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #f1a7c4;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a2b4c;
+    color: white;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+}
+
+.hero .content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero .content h1 span {
+    color: #f1a7c4;
+}
+
+.hero .content p {
+    font-size: 18px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.hero .buttons {
+    margin-top: 30px;
+}
+
+.hero .buttons .btn {
+    background-color: #f1a7c4;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .buttons .btn:hover {
+    background-color: #e67e92;
+}
+
+/* Carousel Styles */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #1a2b4c;
+    color: white;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .content {
+        margin-bottom: 30px;
+    }
+
+    .hero .pizza-image img {
+        width: 80%;
+        height: auto;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+}

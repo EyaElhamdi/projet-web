@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Home - Passer une Commande</title>
+  <link rel="stylesheet" href="commande.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Pizza <span>Home</span></div>
+    <nav>
+      <ul>
+        <li><a href="#pizza.html">Home</a></li>
+        <li><a href="#menu.html">La carte</a></li>
+        <li><a href="#apropos.html">A propos</a></li>
+        <li><a href="#contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="commande">
+    <h2>Passer une Commande</h2>
+    <p>Choisissez votre pizza, entrez vos informations, et passez votre commande !</p>
+
+    <form class="commande-form">
+      <div class="form-group">
+        <label for="name">Nom complet:</label>
+        <input type="text" id="name" name="name" required placeholder="Entrez votre nom complet">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Numéro de téléphone:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Entrez votre numéro de téléphone">
+      </div>
+
+      <div class="form-group">
+        <label for="pizza">Choisissez votre pizza:</label>
+        <select id="pizza" name="pizza" required>
+          <option value="margherita">Margherita</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="veggie">Végétarienne</option>
+          
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Quantité:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Passer la commande</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pizza Home. All rights reserved.</p>
+  </footer>
+</body>
+</html>
